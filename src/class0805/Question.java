@@ -1,6 +1,7 @@
 package class0805;
 
 public class Question implements Complexity{
+
 	private String question;
 	private String answer;
 	private int complexityLevel;
@@ -22,11 +23,20 @@ public class Question implements Complexity{
 		// TODO Auto-generated method stub
 		return this.complexityLevel;
 	}
+
+	public String getQuestion() {
+		return question;
+	}
+
+	public String getAnswer() {
+		return this.answer;
+	}
 	
 	public boolean correct(String reply) {
 		
 		return answer.equals(reply);
 	}
+	
 	
 	
 	
